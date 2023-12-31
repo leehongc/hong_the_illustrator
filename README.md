@@ -7,7 +7,12 @@ Sections to include:
 - Home
 - Gallery
 - About
+
+    Subsections:
     - What I'm currently learning
-    - What are my other interests
     - What am I currently working on
+    - My inspirations
+
 - Contact
+    - Ask me anything
+    - Collaborations
