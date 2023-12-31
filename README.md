@@ -17,6 +17,8 @@ Sections to include:
     - Ask me anything
     - Collaborations
 
+- My shop
+
 
 - My other sites
     - Sustainably Mindful
