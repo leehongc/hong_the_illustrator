@@ -16,3 +16,9 @@ Sections to include:
 - Contact
     - Ask me anything
     - Collaborations
+
+
+- My other sites
+    - Sustainably Mindful
+    - Fire Poppy Studio
+    - Personal/SWE site
