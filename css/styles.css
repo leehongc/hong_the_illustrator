@@ -194,8 +194,10 @@ main {
 @media (max-width: 800px) {
     .full-spread {
         height: calc(100vh - 60px); /* Adjust based on your header height */
+        width: 160%; /* Increase width to mimic zoom effect */
         overflow: hidden;
         padding-top: 0; /* Remove the padding-top */
+        transform: translateX(-35%);
     }
 
     .gallery {
