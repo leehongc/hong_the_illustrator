@@ -1,11 +1,70 @@
-/* Gallery container */
+/* Reset and general styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Navigation styles */
+header {
+    background-color: rgba(51, 51, 51, 0.85); /* Slight transparency */
+    color: #fff;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+nav ul li a:hover {
+    color: #ddd;
+}
+
+/* Main content styles */
+main {
+    margin-top: 60px; /* Adjust based on your header height */
+}
+
+/* Full-spread image styles */
+.full-spread {
+    height: calc(100vh - 60px); /* Adjust based on your header height */
+    overflow: hidden;
+}
+
+.full-spread-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Gallery styles */
 .gallery-container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
 }
 
-/* Category buttons */
 .category-buttons {
     text-align: center;
     margin-bottom: 20px;
@@ -35,11 +94,28 @@
     color: white;
 }
 
+.gallery {
+    column-count: 3;
+    column-gap: 10px;
+}
+
+.gallery .image-item {
+    break-inside: avoid;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.gallery img {
+    width: 100%;
+    display: block;
+    border-radius: 5px;
+}
+
 /* Lightbox styles */
 .lightbox {
     display: none;
     position: fixed;
-    z-index: 1000;
+    z-index: 2000;
     top: 0;
     left: 0;
     width: 100%;
@@ -78,7 +154,7 @@
 
 .lightbox-prev,
 .lightbox-next {
-    top: 80%;
+    top: 50%;
     transform: translateY(-50%);
 }
 
@@ -102,23 +178,11 @@
     background-color: rgba(0, 0, 0, 0.8);
 }
 
-/* Gallery */
-.gallery {
-    column-count: 3;
-    column-gap: 10px;
-}
-
-/* Make gallery images clickable */
-.gallery .image-item {
-    cursor: pointer;
-    margin-bottom: 10px;
-    break-inside: avoid;
-}
-
-.gallery img {
-    width: 100%;
-    display: block;
-    border-radius: 5px;
+/* About section styles */
+#about {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
 /* Responsive design */
@@ -132,7 +196,7 @@
     .gallery {
         column-count: 1;
     }
-    
+      
     .category-btn {
         flex: 1 0 40%;
         margin: 5px;

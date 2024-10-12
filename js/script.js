@@ -7,9 +7,20 @@ document.addEventListener('DOMContentLoaded', () => {
     const prevButton = document.querySelector('.lightbox-prev');
     const nextButton = document.querySelector('.lightbox-next');
     const closeButton = document.querySelector('.lightbox-close');
+    const navLinks = document.querySelectorAll('nav a');
 
     let currentImageIndex = 0;
     let visibleImages = [];
+
+    // Smooth scrolling for navigation
+    navLinks.forEach(link => {
+        link.addEventListener('click', (e) => {
+            e.preventDefault();
+            const targetId = link.getAttribute('href');
+            const targetSection = document.querySelector(targetId);
+            targetSection.scrollIntoView({ behavior: 'smooth' });
+        });
+    });
 
     // Category filtering
     categoryButtons.forEach(button => {
