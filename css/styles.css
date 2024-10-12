@@ -64,7 +64,7 @@ main {
 }
 
 /* Gallery styles */
-.gallery-container {
+.container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
@@ -185,9 +185,10 @@ main {
 
 /* About section styles */
 #about {
-    max-width: 800px;
+    width: 100%;
     margin: 0 auto;
     padding: 20px;
+    background-color: rgb(249, 253, 246);
 }
 
 /* Responsive design */
