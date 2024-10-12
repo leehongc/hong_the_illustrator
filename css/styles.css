@@ -192,6 +192,12 @@ main {
 
 /* Responsive design */
 @media (max-width: 800px) {
+    .full-spread {
+        height: calc(100vh - 60px); /* Adjust based on your header height */
+        overflow: hidden;
+        padding-top: 0; /* Remove the padding-top */
+    }
+
     .gallery {
         column-count: 2;
     }
